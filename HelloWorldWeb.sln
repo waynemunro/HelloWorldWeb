@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D694BCE8-211F-40BE-B56D-D89BC0405FBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{017146FF-633E-4E8A-92F1-673E2D4ED0ED}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HelloWorldWeb", "src\HelloWorldWeb\HelloWorldWeb.xproj", "{B5020637-04CB-4CA2-9255-D84DA4F6DFC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{115B4899-E606-480B-936C-FB383042934B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{288C1451-696D-4A70-9A54-CFE810ED55F7}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{D01792ED-E7BD-4075-8B75-3E15F21D4047}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\HelloWorldWebDockerVM.json = PublishScripts\Templates\HelloWorldWebDockerVM.json
+		PublishScripts\Templates\HelloWorldWebDockerVM.param.dev.json = PublishScripts\Templates\HelloWorldWebDockerVM.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5020637-04CB-4CA2-9255-D84DA4F6DFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5020637-04CB-4CA2-9255-D84DA4F6DFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5020637-04CB-4CA2-9255-D84DA4F6DFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5020637-04CB-4CA2-9255-D84DA4F6DFC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B5020637-04CB-4CA2-9255-D84DA4F6DFC1} = {D694BCE8-211F-40BE-B56D-D89BC0405FBE}
+		{288C1451-696D-4A70-9A54-CFE810ED55F7} = {115B4899-E606-480B-936C-FB383042934B}
+		{D01792ED-E7BD-4075-8B75-3E15F21D4047} = {115B4899-E606-480B-936C-FB383042934B}
+	EndGlobalSection
+EndGlobal

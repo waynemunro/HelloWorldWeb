@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachineLocation": {
+            "value": "northeurope"
+        },
+        "imagePublisher": {
+            "value": "Canonical"
+        },
+        "imageOffer": {
+            "value": "UbuntuServer"
+        },
+        "imageSku": {
+            "value": "15.04"
+        },
+        "dnsNameForPublicIP": {
+            "value": "myhelloworld"
+        },
+        "virtualMachineSize": {
+            "value": "Basic_A2"
+        },
+        "adminUsername": {
+            "value": "wayne"
+        },
+        "newStorageAccountName": {
+            "value": "myhelloworld920f1fe0"
+        }
+    }
+}
